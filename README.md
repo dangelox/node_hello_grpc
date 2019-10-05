@@ -9,5 +9,5 @@ GRPC server/client implementation using NodeJS with mTLS.
 4. Run client node_hello_grpc/node_hello_grpc_server/greater_server.js on a separate terminal by running
 	$ node greater_client
 	 
- 
+* Note: Certs are generated to run server and client on the same machine.
 
