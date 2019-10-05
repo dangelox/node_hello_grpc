@@ -1,0 +1,17 @@
+{
+  "name": "grpc_hello_server",
+  "version": "1.0.0",
+  "description": "GRPC server using NodeJS for educational purposes.",
+  "main": "greeter_server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dilesh Fernando",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/proto-loader": "^0.5.2",
+    "fs": "0.0.1-security",
+    "google-protobuf": "^3.10.0",
+    "grpc": "^1.24.0"
+  }
+}
