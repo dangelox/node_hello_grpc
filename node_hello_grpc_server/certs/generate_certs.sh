@@ -50,6 +50,17 @@ openssl rsa -passin pass:1111 -in client.key -out client.key
 #This specific to this project. 
 #Copy client certs to node_hello_grpc_client/cert folder
 echo -e "\n${PURPLE}Copying client cert and CA cert to client program folder.${NC}"
-cp ./{ca.crt,client.crt,client.key} ../../node_hello_grpc_client/certs
+
+if [ -d "../../node_hello_grpc_client/certs" ] 
+then
+    echo -e "\n${PURPLE}Certs directory exists.${NC}" 
+    cp ./{ca.crt,client.crt,client.key} ../../node_hello_grpc_client/certs
+else
+    echo -e "\n${RED}Error: certs directory does not exists.${NC}"
+    echo -e "\n${PURPLE}Creating certs directory and copying files.${NC}"
+    mkdir ../../node_hello_grpc_client/certs
+    cp ./{ca.crt,client.crt,client.key} ../../node_hello_grpc_client/certs
+fi
+
 
 echo -e "\n${GREEN}All done!${NC}"
