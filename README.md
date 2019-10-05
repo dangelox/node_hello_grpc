@@ -1,4 +1,4 @@
-# GRPC server/client implementation with NodeJS
+# GRPC Server/Client Implementation with NodeJS
 GRPC server/client implementation using NodeJS with mTLS.
 
 # How to Run.
