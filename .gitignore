@@ -1,0 +1,12 @@
+/node_hello_grpc_server/node_modules
+/node_hello_grpc_client/node_modules
+
+/node_hello_grpc_server/certs/*.key
+/node_hello_grpc_server/certs/*.csr
+/node_hello_grpc_server/certs/*.crt
+
+/node_hello_grpc_client/certs/*.key
+/node_hello_grpc_client/certs/*.csr
+/node_hello_grpc_client/certs/*.crt
+
+
